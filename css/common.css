@@ -12,9 +12,67 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* Task 1 */
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-top: 0;
+}
+
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item ul li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 360px;
+}
+
+/* Task 2 */
+
 .gallery-image {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
@@ -24,13 +82,39 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  justify-content: center;
+  gap: 48px 24px;
   list-style: none;
-  padding: 0;
+  margin: 0;
+  padding: 100px 156px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  display: flex;
   justify-content: center;
 }
 
-/* Task 1 */
+/* Task 3 */
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input {
+  font-size: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
 
 /* Task 4 */
 
@@ -108,4 +192,33 @@ input::placeholder {
 }
 .login-form button:hover {
   background-color: #6c8cff;
+}
+
+/* Task 5 */
+
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.change-color {
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
 }
