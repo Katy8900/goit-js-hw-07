@@ -23,3 +23,20 @@ form.addEventListener('submit', function (event) {
 
   form.reset();
 });
+
+const emailInput = form.elements.email;
+const passwordInput = form.elements.password;
+
+emailInput.addEventListener('focus', () => {
+  emailInput.placeholder = 'Type area';
+});
+emailInput.addEventListener('blur', () => {
+  emailInput.placeholder = '';
+});
+
+passwordInput.addEventListener('focus', () => {
+  passwordInput.placeholder = 'Type area';
+});
+passwordInput.addEventListener('blur', () => {
+  passwordInput.placeholder = '';
+});
